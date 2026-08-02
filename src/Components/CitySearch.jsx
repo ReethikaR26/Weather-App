@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './CitySearch.css'
 
 function CitySearch({setCity}){
     const [tempItem ,settempItem] = useState("")
@@ -13,6 +14,7 @@ function CitySearch({setCity}){
         <div className="search-bar">
             <input className="input-city" placeholder="Enter a city to check the weather" 
             value={tempItem}
+            className="input-city"
             onChange={(e) => settempItem(e.target.value)}
             onKeyDown={(e) => {if(e.key === "Enter") handleSearch() ;}} />
             <button onClick={() => handleSearch()}>Search</button>

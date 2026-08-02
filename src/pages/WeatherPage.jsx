@@ -1,6 +1,7 @@
 import CitySearch from '../Components/CitySearch'
 import WeatherDisplay from '../Components/WeatherDisplay'
 import { useState, useEffect } from 'react';
+import './WeatherPage.css'
 
 function WeatherPage(){
 
@@ -35,8 +36,11 @@ function WeatherPage(){
 
     return (
         <>
+        <div className="weather-app">
           <CitySearch setCity={setCity}/>
           <WeatherDisplay weather={weather}/>
+          </div>
+          
         </>
     )
 }

@@ -8,6 +8,7 @@ import ThemeContext from './context/ThemeContext'
 import Navbar from './Components/Navbar'
 import WeatherPage from './pages/WeatherPage';
 import AboutPage from './pages/AboutPage';
+
 function App() {
   const [theme,updateTheme] = useState("light")
 
